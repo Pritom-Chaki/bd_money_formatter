@@ -123,8 +123,8 @@ Are you curious about the changes that occur in each version? [See here for deta
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
 ## **Contributors**
-
-<img src="https://avatars.githubusercontent.com/u/44813407"> | Masud Rana | [https://github.com/Masud99Rana](https://github.com/Masud99Rana) |
+<img src="https://avatars.githubusercontent.com/u/44813407?height=200" alt="Masud99Rana" style="width:200px;"> 
+Masud Rana | [https://github.com/Masud99Rana](https://github.com/Masud99Rana) |
 
 ## **License**
 

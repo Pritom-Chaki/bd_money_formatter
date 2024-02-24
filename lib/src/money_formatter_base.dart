@@ -13,6 +13,7 @@ class BDMoneyFormatter {
   BDMoneyFormatter(this.amount) {
     result = _outputResult();
   }
+
   /// [_outputResult] method for all calculation
   MoneyFormatterOutput _outputResult() {
     if (amount != '' && amount != null) {
@@ -25,7 +26,7 @@ class BDMoneyFormatter {
 
       List<String> tmp = amount.split('.'); // for float or double values
       String strMoney = "";
-      int divide = 1000;
+      // int divide = 1000;
       amount = tmp[0];
 
       if (amount.length >= 3) {

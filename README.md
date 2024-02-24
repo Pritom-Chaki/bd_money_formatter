@@ -2,9 +2,14 @@
 
 > `BDMoneyFormatter` is a [Flutter](https://flutter.io) package to formatting currencies according to the Bangladesh (BD) characteristics.
 >
-> [![latest version](https://img.shields.io/pub/v/bd_money_formatter.svg?style=plastic&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAQAAAC1QeVaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAg8HMDMbfsHaAAABSUlEQVQY0y2LsUvUYRyHn+/7fe2uVMIz4hcnin+BFCrdZq1BQ1MN4VJxY7MoRLg7OGQ0NPkfiIOYBbYpiUO0VSQ15UFxHHf8fu/7cTif9XkeEz/54TO5qX4xtmJP8mZ8vR+vpt/q4gU3QitP3Iwr9fdhyerhPjZ7cBZH9Rf75ldSp11tXKsnZYHlEDvrt9dO4/dkjwjF6tde43M5GjGBlGoxrNtainGOsef9RqsMIyfUEZg8V1pVslf+crL3dup6EW6ZOMMRGEbmnmqh07bpkLEB89xhgMFQo8dRy4AZMGAe+EINkAEp2B6QhvHw7nOJ+9Fuq2guNsvKDaNiBvGLkUTQuf8Pd3e6U+MLKnGAkmkyf8xN/+zAeuFBKt+FZ6qGmux+tP3xw0TFGz7ZoffRlqQkSSolvRCK8Skmz9lpE3lIl0CiUfUix34BalOOAMgIffsAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDItMTVUMDc6NDg6NTEtMDU6MDCMNC56AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAyLTE1VDA3OjQ4OjUxLTA1OjAw/WmWxgAAAABJRU5ErkJggg==)](https://pub.dartlang.org/packages/bd_money_formatter)
+[![Package Version](https://img.shields.io/pub/v/http_mock_adapter?color=teal)](https://github.com/Pritom-Chaki/bd_money_formatter "Published package version")
+[![Style: Lints](https://img.shields.io/badge/style-lints-teal.svg)](https://github.com/Pritom-Chaki/bd_money_formatter "Package linter helper")
+[![Dart CI](https://github.com/Pritom-Chaki/bd_money_formatter/workflows/Dart%20CI/badge.svg?branch=main)](https://github.com/Pritom-Chaki/bd_money_formatter/actions?query=workflow%3A%22Dart+CI%22 "Dart CI workflow")
+[![Publish Package](https://github.com/Pritom-Chaki/bd_money_formatter/workflows/Publish%20to%20pub.dev/badge.svg)](https://github.com/Pritom-Chaki/bd_money_formatter/actions/workflows/publish.yml "Publish Package workflow")
+[![LICENSE](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/Pritom-Chaki/bd_money_formatter#License "Project's LICENSE section")
+[![codecov](https://github.com/Pritom-Chaki/bd_money_formatter/branch/main/graph/badge.svg?token=7H1HPCGFJ6)](https://codecov.io/gh/lomsa-dev/http-mock-adapter)
 
-> [![last commit](https://img.shields.io/github/last-commit/Pritom-Chaki/bd_money_formatter.svg?logo=github&style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter) 
+[![last commit](https://img.shields.io/github/last-commit/Pritom-Chaki/bd_money_formatter.svg?logo=github&style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter) 
 
 
 ## **Features**
@@ -123,7 +128,7 @@ Are you curious about the changes that occur in each version? [See here for deta
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
 ## **Contributors**
-<img src="https://avatars.githubusercontent.com/u/44813407" alt="Masud99Rana" style="width:60px;">
+<img src="https://avatars.githubusercontent.com/u/44813407" width="60"  alt="Masud99Rana">
 
 [Masud Rana](https://github.com/Masud99Rana)
 

@@ -1,6 +1,6 @@
 name: bd_money_formatter
-description: "Flutter package for convert Number to BD Money Format"
-version: 0.0.1
+description: "Flutter package for convert Number to Bangladesh (BD) Money Format, BD money format different than other country, Most of the country write as '12,34,56' but in Bangladesh write as 1,23,456 formation"
+version: 0.0.2
 homepage: https://github.com/Pritom-Chaki/bd_money_formatter
 repository: https://github.com/Pritom-Chaki/bd_money_formatter
 

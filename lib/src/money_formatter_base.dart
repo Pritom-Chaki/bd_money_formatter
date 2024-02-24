@@ -1,22 +1,23 @@
 import 'package:bd_money_formatter/bd_money_formatter.dart';
 
 /// [BDMoneyFormatter] instance
-class MoneyFormatter {
+class BDMoneyFormatter {
   dynamic amount;
 
   /// Returns compiled and formatted output in several formats.
-  late MoneyFormatterOutput output;
+  late MoneyFormatterOutput result;
 
   /// Init instance of [BDMoneyFormatter]
   ///
   /// [amount] required the number that will be formatted
-  MoneyFormatter(this.amount) {
-    output = _resultOutput();
+  BDMoneyFormatter(this.amount) {
+    result = _outputResult();
   }
 
-  MoneyFormatterOutput _resultOutput() {
+  MoneyFormatterOutput _outputResult() {
     if (amount != '' && amount != null) {
-      String permanentAmount = amount.toString();
+      amount = amount.toString();
+      String permanentAmount = amount;
       if (double.parse(permanentAmount) < 0) {
         List<String> temp2 = amount.split('-');
         amount = temp2[1];
@@ -46,6 +47,9 @@ class MoneyFormatter {
 
       if (tmp.length > 1) {
         strMoney = '$strMoney.${tmp[1]}';
+      }
+      if (double.parse(permanentAmount) < 0) {
+        strMoney = '-$strMoney';
       }
 
       return MoneyFormatterOutput(strMoney);

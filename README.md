@@ -124,7 +124,7 @@ Contributions are welcome! If you encounter any issues or have suggestions for i
 
 ## **Contributors**
 
-| Masud Rana | [https://github.com/Masud99Rana](https://github.com/Masud99Rana) |
+<img src="https://avatars.githubusercontent.com/u/44813407"> | Masud Rana | [https://github.com/Masud99Rana](https://github.com/Masud99Rana) |
 
 ## **License**
 

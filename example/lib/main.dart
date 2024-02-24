@@ -49,16 +49,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-             Text(
+            Text(
               'BD Money Formatter Example',
               style: _style.copyWith(fontSize: 20),
             ),
-              Text(
+            Text(
               'It accept any kind of datatype',
               style: _style,
             ),
-           const SizedBox(height: 20.0),
-             const Divider(),
+            const SizedBox(height: 20.0),
+            const Divider(),
             Text(
               'You have enter amount: $amount',
               style: _style,
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'Your output amount: ${BDMoneyFormatter(decimalAmount).result.amount}',
               style: _style,
             ),
-              const Divider(),
+            const Divider(),
             Text(
               'If Money is Negative Decimal Number: $negativeDecimalAmount',
               style: _style,

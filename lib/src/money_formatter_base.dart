@@ -13,7 +13,7 @@ class BDMoneyFormatter {
   BDMoneyFormatter(this.amount) {
     result = _outputResult();
   }
-
+  /// [_outputResult] method for all calculation
   MoneyFormatterOutput _outputResult() {
     if (amount != '' && amount != null) {
       amount = amount.toString();

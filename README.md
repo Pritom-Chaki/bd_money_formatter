@@ -30,7 +30,7 @@ import 'package:bd_money_formatter/bd_money_formatter.dart';
 ```
 ## **Usage**
 
-### **Bangla to English**
+### **BD Money Formatter**
 To Format, use the **`BDMoneyFormatter(decimalAmount).result.amount`** method
 
 ```dart
@@ -106,15 +106,15 @@ class _MyHomePageState extends State<MyHomePage> {
 ## **Example Render UI**
 <img src="https://github.com/Pritom-Chaki/bd_money_formatter/blob/main/example/images/example_ss.png?raw=true">
 
-## Demo
+## **Demo**
 
 For more complete samples, you can grab it from the [example directory](https://github.com/Pritom-Chaki/bd_money_formatter/tree/main/example).
  
-## Help Me
+## **Help Me**
 
 If you find some issues or bugs, please [report here.](https://github.com/Pritom-Chaki/bd_money_formatter/issues/new?assignees=&labels=&template=bug_report.md&title=) You can also help in [requesting new features here.](https://github.com/Pritom-Chaki/bd_money_formatter/issues/new?assignees=&labels=&template=feature_request.md&title=)
 
-## ChangeLog
+## **ChangeLog**
 
 Are you curious about the changes that occur in each version? [See here for detailed informations](https://pub.dartlang.org/packages/bd_money_formatter#-changelog-tab-).
 
@@ -122,9 +122,8 @@ Are you curious about the changes that occur in each version? [See here for deta
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-## Contributors
-| Name | Links |
-| ---- | ----- |
+## **Contributors**
+
 | Masud Rana | [https://github.com/Masud99Rana](https://github.com/Masud99Rana) |
 
 ## **License**

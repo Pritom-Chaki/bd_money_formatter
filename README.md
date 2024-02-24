@@ -2,14 +2,10 @@
 
 > `BDMoneyFormatter` is a [Flutter](https://flutter.io) package to formatting currencies according to the Bangladesh (BD) characteristics.
 >
-[![Package Version](https://img.shields.io/pub/v/http_mock_adapter?color=teal)](https://github.com/Pritom-Chaki/bd_money_formatter "Published package version")
-[![Style: Lints](https://img.shields.io/badge/style-lints-teal.svg)](https://github.com/Pritom-Chaki/bd_money_formatter "Package linter helper")
-[![Dart CI](https://github.com/Pritom-Chaki/bd_money_formatter/workflows/Dart%20CI/badge.svg?branch=main)](https://github.com/Pritom-Chaki/bd_money_formatter/actions?query=workflow%3A%22Dart+CI%22 "Dart CI workflow")
-[![Publish Package](https://github.com/Pritom-Chaki/bd_money_formatter/workflows/Publish%20to%20pub.dev/badge.svg)](https://github.com/Pritom-Chaki/bd_money_formatter/actions/workflows/publish.yml "Publish Package workflow")
-[![LICENSE](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/Pritom-Chaki/bd_money_formatter#License "Project's LICENSE section")
-[![codecov](https://github.com/Pritom-Chaki/bd_money_formatter/branch/main/graph/badge.svg?token=7H1HPCGFJ6)](https://codecov.io/gh/lomsa-dev/http-mock-adapter)
+[![Package Version](https://img.shields.io/pub/v/http_mock_adapter?color=teal&style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter "Published package version")
 
-[![last commit](https://img.shields.io/github/last-commit/Pritom-Chaki/bd_money_formatter.svg?logo=github&style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter) 
+[![LICENSE](https://img.shields.io/badge/License-MIT-red.svg?style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter#License "Project's LICENSE section")
+[![Last Commit](https://img.shields.io/github/last-commit/Pritom-Chaki/bd_money_formatter.svg?logo=github&style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter) 
 
 
 ## **Features**

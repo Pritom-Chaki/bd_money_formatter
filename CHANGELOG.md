@@ -1,3 +1,7 @@
+## 1.0.0
+
+* Update flutter version.
+
 ## 0.0.2
 
 * Update for readme and pub points.

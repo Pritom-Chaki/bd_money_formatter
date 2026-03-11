@@ -1,18 +1,18 @@
 name: bd_money_formatter
-description: "Flutter package for convert Number to Bangladesh (BD) Money Format, BD money format different than other country, Most of the country write as '12,34,56' but in Bangladesh write as 1,23,456 formation"
-version: 1.0.0
+description: "A Dart package to format numbers into Bangladesh (BD) money format. BD uses a unique grouping: 12,34,567 instead of 1,234,567."
+version: 2.0.0
 homepage: https://github.com/Pritom-Chaki/bd_money_formatter
 repository: https://github.com/Pritom-Chaki/bd_money_formatter
+issue_tracker: https://github.com/Pritom-Chaki/bd_money_formatter/issues
+topics:
+  - money
+  - formatter
+  - bangladesh
+  - currency
 
 environment:
-  sdk: ^3.7.2
-  flutter: ">=1.17.0"
-
-dependencies:
-  flutter:
-    sdk: flutter
+  sdk: ">=3.0.0 <4.0.0"
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^5.0.0
+  test: ^1.24.0
+  lints: ^5.1.1

@@ -8,7 +8,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,74 +16,44 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'BD Money Formatter'),
+      home: const MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
 
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  double amount = 2554413646;
-  double decimalAmount = 97865466.352;
-  double negativeDecimalAmount = -456978.32;
-  BDMoneyFormatter output = BDMoneyFormatter(2554413646);
-  final TextStyle _style = const TextStyle(
-      color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold);
   @override
   Widget build(BuildContext context) {
+    const style = TextStyle(
+        color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: const Text('BD Money Formatter'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'BD Money Formatter Example',
-              style: _style.copyWith(fontSize: 20),
-            ),
-            Text(
-              'It accept any kind of datatype',
-              style: _style,
-            ),
+            Text('BD Money Formatter Example',
+                style: style.copyWith(fontSize: 20)),
             const SizedBox(height: 20.0),
             const Divider(),
-            Text(
-              'You have enter amount: $amount',
-              style: _style,
-            ),
-            Text(
-              'Your output amount: ${output.result.amount}',
-              style: _style,
-            ),
+            Text('Integer: 2554413646 → ${2554413646.toBDMoney()}',
+                style: style),
+            const Divider(),
+            Text('Decimal: 97865466.352 → ${97865466.352.toBDMoney()}',
+                style: style),
+            const Divider(),
+            Text('Negative: -456978.32 → ${(-456978.32).toBDMoney()}',
+                style: style),
             const Divider(),
             Text(
-              'If Money is Decimal Number: $decimalAmount',
-              style: _style,
-            ),
-            Text(
-              'Your output amount: ${BDMoneyFormatter(decimalAmount).result.amount}',
-              style: _style,
-            ),
-            const Divider(),
-            Text(
-              'If Money is Negative Decimal Number: $negativeDecimalAmount',
-              style: _style,
-            ),
-            Text(
-              'Your output amount: ${BDMoneyFormatter(negativeDecimalAmount).result.amount}',
-              style: _style,
-            ),
+                'With Currency: ${BDMoneyFormatter(2554413646).result.amountWithCurrency}',
+                style: style),
           ],
         ),
       ),

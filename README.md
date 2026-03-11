@@ -1,133 +1,109 @@
 # bd_money_formatter
 
-> `BDMoneyFormatter` is a [Flutter](https://flutter.io) package to formatting currencies according to the Bangladesh (BD) characteristics.
->
-[![Package Version](https://img.shields.io/pub/v/http_mock_adapter?color=teal&style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter "Published package version")
+> A Dart package to format numbers into Bangladesh (BD) money format.
 
-[![LICENSE](https://img.shields.io/badge/License-MIT-red.svg?style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter#License "Project's LICENSE section")
-[![Last Commit](https://img.shields.io/github/last-commit/Pritom-Chaki/bd_money_formatter.svg?logo=github&style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter) 
+[![Package Version](https://img.shields.io/pub/v/bd_money_formatter?color=teal&style=plastic)](https://pub.dev/packages/bd_money_formatter "Published package version")
+[![LICENSE](https://img.shields.io/badge/License-MIT-red.svg?style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter/blob/main/LICENSE "Project's LICENSE")
+[![Last Commit](https://img.shields.io/github/last-commit/Pritom-Chaki/bd_money_formatter.svg?logo=github&style=plastic)](https://github.com/Pritom-Chaki/bd_money_formatter)
 
+Bangladesh uses a unique number grouping system — the first group from the right has **3 digits**, and every subsequent group has **2 digits**:
 
-## **Features**
+| Input       | BD Format      | International Format |
+|-------------|----------------|----------------------|
+| 1234567     | 12,34,567      | 1,234,567            |
+| 97865466.35 | 9,78,65,466.35 | 97,865,466.35        |
 
-- Convert any Amount to BD Money format.
-- Support all kind of Data Types.
-- Suitable for al type of flutter applications.
+## Features
 
-## **Installation**
+- Format any number to BD money format
+- Currency symbol support (default: ৳)
+- Supports `int` and `double` types
+- Handles negative and decimal numbers
+- Convenient `num` extension methods (`toBDMoney()`, `toBDMoneyWithCurrency()`)
+- Pure Dart — works with Flutter, server-side Dart, and CLI apps
 
-To use the 'Bangla Converter' Flutter package, follow these steps:
+## Installation
 
-1. Add the following line to the dependencies section in your project's **`pubspec.yaml`** file:
+Add the following to your `pubspec.yaml`:
 
 ```yaml
-flutter pub add bd_money_formatter
+dependencies:
+  bd_money_formatter: ^2.0.0
 ```
 
-2. Import the package in your Dart code:
+Or run:
+
+```bash
+dart pub add bd_money_formatter
+```
+
+Then import:
 
 ```dart
 import 'package:bd_money_formatter/bd_money_formatter.dart';
 ```
-## **Usage**
 
-### **BD Money Formatter**
-To Format, use the **`BDMoneyFormatter(decimalAmount).result.amount`** method
+## Usage
+
+### Using `BDMoneyFormatter` class
 
 ```dart
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+final formatter = BDMoneyFormatter(2554413646);
+print(formatter.result.amount);             // 2,55,44,13,646
+print(formatter.result.amountWithCurrency); // ৳ 2,55,44,13,646
+print(formatter.result.originalValue);      // 2554413646
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
+// Custom currency symbol
+final custom = BDMoneyFormatter(1234567, currencySymbol: 'BDT');
+print(custom.result.amountWithCurrency); // BDT 12,34,567
 
-class _MyHomePageState extends State<MyHomePage> {
-  double amount = 2554413646;
-  double decimalAmount = 97865466.352;
-  double negativeDecimalAmount = -456978.32;
-  BDMoneyFormatter output = BDMoneyFormatter(2554413646);
-  final TextStyle _style = const TextStyle(
-      color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold);
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("BD Money Formatter"),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'BD Money Formatter Example',
-              style: _style.copyWith(fontSize: 20),
-            ),
-            Text(
-              'It accept any kind of datatype',
-              style: _style,
-            ),
-            const SizedBox(height: 20.0),
-            const Divider(),
-            Text(
-              'You have enter amount: $amount',
-              style: _style,
-            ),
-            Text(
-              'Your output amount: ${output.result.amount}',
-              style: _style,
-            ),
-            const Divider(),
-            Text(
-              'If Money is Decimal Number: $decimalAmount',
-              style: _style,
-            ),
-            Text(
-              'Your output amount: ${BDMoneyFormatter(decimalAmount).result.amount}',
-              style: _style,
-            ),
-            const Divider(),
-            Text(
-              'If Money is Negative Decimal Number: $negativeDecimalAmount',
-              style: _style,
-            ),
-            Text(
-              'Your output amount: ${BDMoneyFormatter(negativeDecimalAmount).result.amount}',
-              style: _style,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+// Decimal numbers
+print(BDMoneyFormatter(97865466.352).result.amount); // 9,78,65,466.352
 
+// Negative numbers
+print(BDMoneyFormatter(-456978.32).result.amount); // -4,56,978.32
 ```
-## **Example Render UI**
+
+### Using extension methods
+
+```dart
+print(1234567.toBDMoney());              // 12,34,567
+print(1234567.toBDMoneyWithCurrency());  // ৳ 12,34,567
+print(97865466.352.toBDMoney());         // 9,78,65,466.352
+```
+
+### Flutter example
+
+```dart
+Text('Amount: ${1234567.toBDMoney()}'),
+Text('Price: ${BDMoneyFormatter(2554413646).result.amountWithCurrency}'),
+```
+
+## Example Render UI
 <img src="https://github.com/Pritom-Chaki/bd_money_formatter/blob/main/example/images/example_ss.png?raw=true">
 
-## **Demo**
+## Demo
 
-For more complete samples, you can grab it from the [example directory](https://github.com/Pritom-Chaki/bd_money_formatter/tree/main/example).
- 
-## **Help Me**
+For a complete example app, see the [example directory](https://github.com/Pritom-Chaki/bd_money_formatter/tree/main/example).
 
-If you find some issues or bugs, please [report here.](https://github.com/Pritom-Chaki/bd_money_formatter/issues/new?assignees=&labels=&template=bug_report.md&title=) You can also help in [requesting new features here.](https://github.com/Pritom-Chaki/bd_money_formatter/issues/new?assignees=&labels=&template=feature_request.md&title=)
+## Help
 
-## **ChangeLog**
+Found a bug? [Report it here.](https://github.com/Pritom-Chaki/bd_money_formatter/issues/new?assignees=&labels=&template=bug_report.md&title=)
+Have a feature request? [Request it here.](https://github.com/Pritom-Chaki/bd_money_formatter/issues/new?assignees=&labels=&template=feature_request.md&title=)
 
-Are you curious about the changes that occur in each version? [See here for detailed informations](https://pub.dartlang.org/packages/bd_money_formatter#-changelog-tab-).
+## Changelog
 
-## **Contributions**
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
-Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+## Contributions
 
-## **Contributors**
-<img src="https://avatars.githubusercontent.com/u/44813407" width="60"  alt="Masud99Rana">
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## Contributors
+<img src="https://avatars.githubusercontent.com/u/44813407" width="60" alt="Masud99Rana">
 
 [Masud Rana](https://github.com/Masud99Rana)
 
-## **License**
+## License
 
-The 'BD Money Formatter' Flutter plugin is released under the **[MIT License](https://github.com/Pritom-Chaki/bd_money_formatter/blob/main/LICENSE)**.
+Released under the [MIT License](LICENSE).

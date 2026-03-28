@@ -77,7 +77,7 @@ Text('Price: ${BDMoneyFormatter(2554413646).result.amountWithCurrency}'),
 ## Example Render UI
 <img src="https://raw.githubusercontent.com/Pritom-Chaki/bd_money_formatter/main/example/images/example_ss.png?raw=true">
 
-[![Contact Me](https://www.pritom.me/assets/contact_me.gif?raw=true)](https://www.pritom.me/contact?source=pubget)
+[![Contact Me](https://www.pritom.me/assets/contact_me.gif?raw=true)](https://www.pritom.me/contact?source=pubget_bd_money_formatter)
 
 ## Demo
 

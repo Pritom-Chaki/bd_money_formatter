@@ -1,3 +1,7 @@
+## 2.0.1
+
+* Update README.md file.
+
 ## 2.0.0
 
 * **BREAKING**: `amount` parameter now accepts `num` instead of `dynamic` — provides type safety.

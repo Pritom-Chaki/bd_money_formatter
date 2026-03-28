@@ -1,6 +1,6 @@
 name: bd_money_formatter
 description: "A Dart package to format numbers into Bangladesh (BD) money format. BD uses a unique grouping: 12,34,567 instead of 1,234,567."
-version: 2.0.0
+version: 2.0.1
 homepage: https://github.com/Pritom-Chaki/bd_money_formatter
 repository: https://github.com/Pritom-Chaki/bd_money_formatter
 issue_tracker: https://github.com/Pritom-Chaki/bd_money_formatter/issues
@@ -9,6 +9,7 @@ topics:
   - formatter
   - bangladesh
   - currency
+  - formatter
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
